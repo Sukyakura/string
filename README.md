@@ -166,3 +166,7 @@ int型の10進数unicodeから`{u: xxxx, c: '{"text":"X"}'}`の形に変換し�
  ```
   {u: 33609, c: '{"text":"草"}'}
  ```
+
+## LICENSE
+
+These codes are released under the MIT License, see LICENSE.
