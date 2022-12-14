@@ -1,0 +1,16 @@
+{
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "structures": {
+                "structures": {
+                }
+            },
+            "layers": [
+            ],
+            "biome": "minecraft:the_void",
+            "structure_overrides":"minecraft:villages"
+        }
+    },
+    "type": "string:void"
+}
