@@ -9,6 +9,7 @@
 #        ※"interpret":trueで結合された文字列を表示可能
 #
 
+execute in string:void run forceload add 0 0
 data modify storage string: join.text set value [['{"text":""}'],[]]
 data modify storage string: join.text[1] set from storage string: in
 execute if data storage string: join.text[1][0] run function string:join/text
