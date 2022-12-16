@@ -25,4 +25,4 @@ execute if data storage string: {mid:{error:1b}} run scoreboard players set #Ali
 data modify storage string: out set value []
 data modify storage string: mid.list set from storage string: in[0]
 execute if score #Alice sk_string_mids matches 1.. run function string:mid/start
-execute if score #Alice sk_string_midn matches 1.. if data storage string: mid.list[0] run function string:mid/deque
+execute if score #Alice sk_string_midn matches 1.. if data storage string: mid.list[0] run function string:mid/dequeue
