@@ -10,9 +10,10 @@
 #
 
 execute in string:void run forceload add 0 0
-scoreboard objectives add sk_string dummy
-execute unless score #Alice sk_string = #Alice sk_string run scoreboard players set #Alice sk_string 0
+scoreboard objectives add sk_string_split_i dummy
+scoreboard objectives add sk_string_split_u dummy
+execute unless score #Alice sk_string_split_i = #Alice sk_string_split_i run scoreboard players set #Alice sk_string_split_i 0
 execute if data storage string: {exec:1b} run tellraw @s {"text":"現在文字列分割は実行中です","color":"red"}
-execute if data storage string: {exec:0b} run data modify storage string: out set value []
-execute if data storage string: {exec:0b} unless data storage string: {in:""} in string:void run setblock 0 -63 1 minecraft:redstone_block
-execute if data storage string: {exec:0b} unless data storage string: {in:""} run data modify storage string: exec set value 1b
+execute unless data storage string: {exec:1b} run data modify storage string: out set value []
+execute unless data storage string: {exec:1b} unless data storage string: {in:""} in string:void run setblock 0 -63 1 minecraft:redstone_block
+execute unless data storage string: {exec:1b} unless data storage string: {in:""} run data modify storage string: exec set value 1b

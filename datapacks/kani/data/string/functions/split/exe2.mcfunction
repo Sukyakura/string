@@ -9,4 +9,4 @@ data modify storage string: comp.tag append from block ~ ~-1 ~ LastOutput
 data modify entity @e[type=minecraft:bat,name="sk_string_bat",scores={sk_string=2},limit=1] Tags set from storage string: comp.tag
 
 #文字数をカウント
-execute if score #Alice sk_string matches 0 run function string:split/count
+execute if score #Alice sk_string_split_i matches 0 run function string:split/count
